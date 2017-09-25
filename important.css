@@ -14,11 +14,12 @@ the normal GCal CSS the !important tags are needed
 }
 
 #gadgetcell {
-    display: none !important;
+    margin-right: 0 !important;
+    /* display: none !important; */
 }
 
 #maincell.has-sn-ex {
-    margin-right: 0 !important;
+    box-shadow: 20px 0 20px -22px;
 }
 
 #mainbody {
@@ -141,7 +142,7 @@ the normal GCal CSS the !important tags are needed
     -webkit-box-shadow: 2px 2px 12px -1px rgba(51,51,51,0.41) !important;
     -moz-box-shadow: 2px 2px 12px -1px rgba(51,51,51,0.41) !important;
     box-shadow: 2px 2px 12px -1px rgba(51,51,51,0.41) !important;*/
-    -webkit-border-radius: 3px !important;
+    border-radius: 0px !important;
 }
 
 .mask-right {
@@ -153,15 +154,49 @@ the normal GCal CSS the !important tags are needed
 }
 
 .chip dl {
-    border-left: 0 !important;
-    border-right: 0 !important;
-    padding-top: 3px !important;
+    border-width: 0 !important;
+    border-top-width: 5px !important;
+    padding-top: 0px !important;
+    padding-bottom: 2px !important;
+}
+.chip dd{
+    font-size: 10px !important;
+}
+.chip-border{
+    border: none !important;
 }
 
 .cbrd {
-    border: 0 !important;
-    -moz-border-radius: 3px !important;
-    -webkit-border-radius: 3px !important;
+    border-top-width: 5px !important;
+    border-radius: 0px !important;
+    color:#333;
+}
+.cloc{
+    font-size: 8px !important;
+}
+.cic{
+    transform: translateY(-2px);
+}
+span.chip-caption {
+    display: inline-block;
+    transform: scale(0.8) translateX(-13%);
+    /* transform: translateX(-5px); */
+}
+.cloc:before{
+    content:' ';
+    width:6px;
+    height:10px;
+    top:1.5px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    opacity: 0.8;
+    background-size: 100% 100%;
+    background-position: bottom;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQyNS45NjMgNDI1Ljk2MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDI1Ljk2MyA0MjUuOTYzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTIxMy4yODUsMGgtMC42MDhDMTM5LjExNCwwLDc5LjI2OCw1OS44MjYsNzkuMjY4LDEzMy4zNjFjMCw0OC4yMDIsMjEuOTUyLDExMS44MTcsNjUuMjQ2LDE4OS4wODEgICBjMzIuMDk4LDU3LjI4MSw2NC42NDYsMTAxLjE1Miw2NC45NzIsMTAxLjU4OGMwLjkwNiwxLjIxNywyLjMzNCwxLjkzNCwzLjg0NywxLjkzNGMwLjA0MywwLDAuMDg3LDAsMC4xMy0wLjAwMiAgIGMxLjU2MS0wLjA0MywzLjAwMi0wLjg0MiwzLjg2OC0yLjE0M2MwLjMyMS0wLjQ4NiwzMi42MzctNDkuMjg3LDY0LjUxNy0xMDguOTc2YzQzLjAzLTgwLjU2Myw2NC44NDgtMTQxLjYyNCw2NC44NDgtMTgxLjQ4MiAgIEMzNDYuNjkzLDU5LjgyNSwyODYuODQ2LDAsMjEzLjI4NSwweiBNMjc0Ljg2NSwxMzYuNjJjMCwzNC4xMjQtMjcuNzYxLDYxLjg4NC02MS44ODUsNjEuODg0ICAgYy0zNC4xMjMsMC02MS44ODQtMjcuNzYxLTYxLjg4NC02MS44ODRzMjcuNzYxLTYxLjg4NCw2MS44ODQtNjEuODg0QzI0Ny4xMDQsNzQuNzM2LDI3NC44NjUsMTAyLjQ5NywyNzQuODY1LDEzNi42MnoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+}
+.mask-top, .mask-bottom{
+    display: none !important;
 }
 
 .tg-dualmarker, .tg-dualmarker60 {

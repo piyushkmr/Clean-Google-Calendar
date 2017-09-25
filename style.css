@@ -133,11 +133,11 @@
 }
 
 .chip {
-    margin-left: 6px;/*
+    margin-left: 0px;/*
     -webkit-box-shadow: 2px 2px 12px -1px rgba(51,51,51,0.41);
     -moz-box-shadow: 2px 2px 12px -1px rgba(51,51,51,0.41);
     box-shadow: 2px 2px 12px -1px rgba(51,51,51,0.41);*/
-    -webkit-border-radius: 3px;
+    border-radius: 0px;
 }
 
 .mask-right {
